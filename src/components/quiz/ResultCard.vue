@@ -12,7 +12,7 @@ const props = defineProps<{
   resultId: string;
 }>();
 
-import { profiles } from "../../data/profiles";
+import { profiles } from "@data/profiles";
 
 const { title, description } = profiles[props.resultId] || {
   title: "Profil inconnu",

@@ -7,8 +7,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import QuizRoot from "../components/quiz/QuizRoot.vue";
-import ResultCard from "../components/quiz/ResultCard.vue";
+import QuizRoot from "@components/quiz/QuizRoot.vue";
+import ResultCard from "@components/quiz/ResultCard.vue";
 
 const result = ref<string | null>(null);
 

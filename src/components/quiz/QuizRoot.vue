@@ -3,14 +3,17 @@
     <h2 class="text-2xl font-bold text-center font-pixel">
       {{ currentQuestion.title }}
     </h2>
-    <QuizOption :options="currentQuestion.options" @select="handleSelect" />
+    <QuizOptionAudio
+      :options="currentQuestion.options"
+      @select="handleSelect"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import QuizOption from "./QuizOption.vue";
-import { questions } from "../../data/questions";
+import QuizOption from "@components/quiz/QuizOption.vue";
+import { questions } from "@/data/questions";
 
 const currentIndex = ref(0);
 const scores = ref<Record<string, number>>({});
