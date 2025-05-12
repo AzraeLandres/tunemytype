@@ -4,25 +4,25 @@ export const questions = [
     title: "You just woke up, what's your soundtrack?",
     options: [
       {
-        label: "“Highway to Hell”",
+        label: "Highway to Hell",
         artist: "AC/DC",
         scores: ["chaos"],
         searchTerm: "highway to hell acdc",
       },
       {
-        label: "“Banana Pancakes”",
+        label: "Banana Pancakes",
         artist: "Jack Johnson",
         scores: ["easygoing"],
         searchTerm: "banana pancakes jack johnson",
       },
       {
-        label: "“Intro”",
+        label: "Intro",
         artist: "The xx",
         scores: ["focus"],
         searchTerm: "intro the xx",
       },
       {
-        label: "“Feel Good Inc.”",
+        label: "Feel Good Inc.",
         artist: "Gorillaz",
         scores: ["energetic"],
         searchTerm: "feel good inc gorillaz",
@@ -34,25 +34,25 @@ export const questions = [
     title: "You're going to miss your bus… What do you do?",
     options: [
       {
-        label: "“Run”",
+        label: "Run",
         artist: "OneRepublic",
         scores: ["energetic"],
         searchTerm: "run onerepublic",
       },
       {
-        label: "“Let It Happen”",
+        label: "Let It Happen",
         artist: "Tame Impala",
         scores: ["easygoing", "chaos"],
         searchTerm: "let it happen tame impala",
       },
       {
-        label: "“Take a Breath”",
+        label: "Take a Breath",
         artist: "Sia",
         scores: ["focus"],
         searchTerm: "breathe sia",
       },
       {
-        label: "“Lose Control”",
+        label: "Lose Control",
         artist: "Missy Elliott",
         scores: ["chaos"],
         searchTerm: "lose control missy elliott",
@@ -64,25 +64,25 @@ export const questions = [
     title: "You caught the bus but you notice a big stain on your shirt...",
     options: [
       {
-        label: "“I Don't Care”",
+        label: "I Don't Care",
         artist: "Ed Sheeran & Justin Bieber",
         scores: ["focus"],
         searchTerm: "i dont care ed sheeran",
       },
       {
-        label: "“Look Away”",
+        label: "Look Away",
         artist: "Chicago",
         scores: ["easygoing"],
         searchTerm: "look away chicago",
       },
       {
-        label: "“Stressed Out”",
+        label: "Stressed Out",
         artist: "Twenty One Pilots",
         scores: ["energetic"],
         searchTerm: "stressed out twenty one pilots",
       },
       {
-        label: "“Rip It Open”",
+        label: "Rip It Open",
         artist: "Deadly Guns & Ncrypta",
         scores: ["chaos"],
         searchTerm: "rip it open deadly guns ncrypta",
@@ -94,25 +94,25 @@ export const questions = [
     title: "Finally at the office, it's lunch time… but someone ate your food.",
     options: [
       {
-        label: "“Don't worry Be Happy”",
+        label: "Don't worry Be Happy",
         artist: "Bobby McFerrin",
         scores: ["easygoing"],
         searchTerm: "dont worry be happy bobby mcferrin",
       },
       {
-        label: "“I will find you”",
+        label: "I will find you",
         artist: "Mohikana",
         scores: ["energetic"],
         searchTerm: "i will find you mohikana",
       },
       {
-        label: "“Scream”",
+        label: "Scream",
         artist: "Michael Jackson & Janet Jackson",
         scores: ["chaos"],
         searchTerm: "scream michael jackson",
       },
       {
-        label: "“7 rings”",
+        label: "7 rings",
         artist: "Ariana Grande",
         scores: ["focus"],
         searchTerm: "7 rings ariana grande",
