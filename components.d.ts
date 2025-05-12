@@ -8,7 +8,10 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AudioCard: typeof import('./src/components/quiz/AudioCard.vue')['default']
+    AudioPlayerCard: typeof import('./src/components/quiz/AudioPlayerCard.vue')['default']
     QuizOption: typeof import('./src/components/quiz/QuizOption.vue')['default']
+    QuizOptionAudio: typeof import('./src/components/quiz/QuizOptionAudio.vue')['default']
     QuizRoot: typeof import('./src/components/quiz/QuizRoot.vue')['default']
     RadioGroupIndicator: typeof import('radix-vue')['RadioGroupIndicator']
     RadioGroupItem: typeof import('radix-vue')['RadioGroupItem']

@@ -3,18 +3,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FF0196",
         aqua: "#0599B3",
         orange: "#F59E00",
         blue: "#0090F5",
-        background: "#fdf1e7",
+        background: "#F8F7FC",
         window: "#fff6f6",
       },
       fontFamily: {
         pixel: ['"Press Start 2P"', "monospace"],
       },
       boxShadow: {
-        pixel: "inset 0 -2px 0 #000",
+        custom: "1px 2px 1px 1px #0000001a",
       },
       borderRadius: {
         pixel: "4px",
