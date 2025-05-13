@@ -1,21 +1,39 @@
 <template>
   <div
-    class="bg-window border border-black rounded-pixel shadow-lg p-6 text-center font-pixel max-w-xl mx-auto"
+    class="rounded-xl shadow-custom p-6 text-center max-w-xl mx-auto relative overflow-hidden"
   >
-    <h2 class="text-2xl font-bold text-primary mb-4">{{ title }}</h2>
-    <p class="text-lg text-black">{{ description }}</p>
+    <!-- Background -->
+    <div
+      class="absolute inset-0 z-0 bg-gradient-to-br pointer-events-none"
+      :class="profile?.bg"
+    ></div>
+
+    <!-- content -->
+    <div class="relative z-10" :class="profile?.textColor">
+      <div class="text-5xl mb-2">{{ profile?.emoji || "❓" }}</div>
+
+      <h2 class="text-2xl font-bold mb-2">
+        {{ profile?.title || "Unknown Type" }}
+      </h2>
+
+      <div
+        class="inline-block mb-4 text-xs uppercase tracking-wider bg-black text-white px-3 py-1 rounded-full shadow"
+      >
+        {{ resultId }}
+      </div>
+
+      <p class="text-md leading-relaxed">
+        {{ profile?.description || "This profile doesn't exist yet!" }}
+      </p>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
-  resultId: string;
-}>();
-
+import { computed } from "vue";
 import { profiles } from "@data/profiles";
 
-const { title, description } = profiles[props.resultId] || {
-  title: "Profil inconnu",
-  description: "Aucun profil ne correspond à vos réponses.",
-};
+const props = defineProps<{ resultId: string }>();
+
+const profile = computed(() => profiles[props.resultId]);
 </script>
