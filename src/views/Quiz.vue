@@ -1,18 +1,20 @@
 <template>
   <div class="bg-background min-h-screen flex items-center justify-center">
-    <ResultCard v-if="result" :result-id="result" />
-    <QuizRoot v-else @finish="handleResult" />
+    <QuizRoot @finish="handleResult" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 import QuizRoot from "@components/quiz/QuizRoot.vue";
-import ResultCard from "@components/quiz/ResultCard.vue";
-
+import { useRouter } from "vue-router";
 const result = ref<string | null>(null);
 
-function handleResult(profileId: string) {
-  result.value = profileId;
-}
+const router = useRouter();
+const handleResult = (profileId: string) => {
+  router.push({
+    name: "Result",
+    params: { id: profileId },
+  });
+};
 </script>

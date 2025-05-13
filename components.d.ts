@@ -8,15 +8,18 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AlbumCard: typeof import('./src/components/AlbumCard.vue')['default']
     AudioCard: typeof import('./src/components/quiz/AudioCard.vue')['default']
     AudioPlayerCard: typeof import('./src/components/quiz/AudioPlayerCard.vue')['default']
+    DialogDescription: typeof import('radix-vue')['DialogDescription']
     QuizOption: typeof import('./src/components/quiz/QuizOption.vue')['default']
     QuizOptionAudio: typeof import('./src/components/quiz/QuizOptionAudio.vue')['default']
     QuizRoot: typeof import('./src/components/quiz/QuizRoot.vue')['default']
     RadioGroupIndicator: typeof import('radix-vue')['RadioGroupIndicator']
     RadioGroupItem: typeof import('radix-vue')['RadioGroupItem']
     RadioGroupRoot: typeof import('radix-vue')['RadioGroupRoot']
-    ResultCard: typeof import('./src/components/quiz/ResultCard.vue')['default']
+    ResultLayout: typeof import('./src/components/result/ResultLayout.vue')['default']
+    ResultReveal: typeof import('./src/components/result/ResultReveal.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

@@ -1,11 +1,13 @@
 <template>
-  <ResultCard :result-id="id" />
+  <div class="bg-background min-h-screen flex items-center justify-center">
+    <ResultLayout :result-id="resultId" />
+  </div>
 </template>
 
 <script setup lang="ts">
-import ResultCard from "@components/quiz/ResultCard.vue";
 import { useRoute } from "vue-router";
+import ResultLayout from "@components/result/ResultLayout.vue";
 
 const route = useRoute();
-const id = route.params.id as string;
+const resultId = route.params.id as string;
 </script>
