@@ -23,7 +23,7 @@ Il te guide à travers une série de choix sonores et visuels, puis te révèle 
 | Catégorie       | Technologie                               |
 | --------------- | ----------------------------------------- |
 | Framework       | Vue 3 + TypeScript                        |
-| UI              | Tailwind CSS + Design pixel rétro         |
+| UI              | Tailwind CSS                              |
 | Architecture UI | Composants headless (inspiré de Radix UI) |
 | Audio           | iTunes API (preview des morceaux)         |
 | Composabilité   | Composition API + scoped slots            |
