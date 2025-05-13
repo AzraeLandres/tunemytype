@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div
+    class="bg-gradient-to-br from-primary via-teal to-yellow min-h-screen flex items-center justify-center"
+  >
     <ResultCard v-if="result" :result-id="result" />
     <QuizRoot v-else @finish="handleResult" />
   </div>

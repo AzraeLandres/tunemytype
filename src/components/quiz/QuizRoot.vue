@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mx-auto flex flex-col gap-8 items-center">
-    <h2 class="text-2xl font-bold text-center">
+    <h2 class="text-2xl font-bold text-center text-white">
       {{ currentQuestion.title }}
     </h2>
     <QuizOptionAudio
