@@ -1,8 +1,14 @@
-/* Police rétro */
-
 @import "tailwindcss";
+
 @theme {
   --color-primary: #ff2f92;
+  --color-background: #f8f7fc;
+  --shadow-custom: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  --font-family-roboto: "Roboto", sans-serif;
+}
+
+body {
+  @apply font-family-roboto;
 }
 input[type="range"].custom-slider {
   -webkit-appearance: none;
