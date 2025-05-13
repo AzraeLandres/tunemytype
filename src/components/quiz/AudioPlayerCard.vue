@@ -1,14 +1,14 @@
 <template>
   <RadioGroupItem
     :value="option.label"
-    class="bg-white rounded-xl p-4 shadow-[1px_2px_1px_1px_rgba(0,_0,_0,_0.1)] w-72 flex flex-col items-center gap-4 transition-all duration-200 data-[state=checked]:ring-2 data-[state=checked]:ring-primary"
+    class="bg-white rounded-xl px-4 py-6 shadow-custom w-64 flex flex-col items-center gap-4"
   >
     <!-- Cover -->
     <img
       v-if="artworkUrl"
       :src="artworkUrl"
       alt="Album cover"
-      class="rounded-md w-40 h-40 shadow-[1px_2px_1px_1px_rgba(0,_0,_0,_0.1)]"
+      class="rounded-md w-40 h-40 shadow-custom"
     />
 
     <!-- Title and Artist -->
@@ -21,7 +21,7 @@
       <button
         @click.stop="$emit('toggle-playback')"
         :aria-label="isPlaying ? 'Pause preview' : 'Play preview'"
-        class="bg-primary text-white p-2 rounded-full hover:bg-primary transition"
+        class="bg-transparent text-primary p-2 rounded-full transition cursor-pointer"
       >
         <component :is="isPlaying ? Pause : Play" class="w-5 h-5" />
       </button>
