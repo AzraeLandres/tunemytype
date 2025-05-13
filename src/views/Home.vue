@@ -3,7 +3,7 @@
     class="min-h-screen bg-gradient-to-br from-primary via-teal to-yellow text-white flex flex-col items-center justify-center gap-6"
   >
     <!-- Titre -->
-    <h1 class="text-4xl font-pixel text-center drop-shadow-md">TuneMyType</h1>
+    <h1 class="text-4xl text-center drop-shadow-md">TuneMyType</h1>
 
     <!-- Sous-titre -->
     <p class="text-lg md:text-xl text-center mb-2 max-w-xl">
